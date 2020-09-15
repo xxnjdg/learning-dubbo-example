@@ -1,0 +1,13 @@
+server:
+  port: 12222
+swagger:
+  enable: true
+  title: consumer子系统
+  description: consumer子系统
+  version: 1.0.0
+  base-package: io.xxnjdg.learning.dubbo.example.consumer.common
+dubbo:
+  application:
+    name: samples-annotation-consumer
+  registry:
+    address: zookeeper://${zookeeper.address:127.0.0.1}:2181
